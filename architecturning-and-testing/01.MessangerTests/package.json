@@ -1,0 +1,19 @@
+{
+  "name": "01.MessangerTests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  },
+  "dependencies": {
+    "playwright-chromium": "^1.16.3"
+  }
+}

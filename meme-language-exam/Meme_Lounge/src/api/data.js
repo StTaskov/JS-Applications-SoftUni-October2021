@@ -1,0 +1,21 @@
+import * as api from './api.js'
+
+export const login = api.login
+export const register = api.register
+export const logout = api.logout
+
+export async function getAllMemes(){
+    return await api.get('/data/memes?sortBy=_createdOn%20desc')
+}
+
+export async function createMeme(meme){
+    return api.post('/data/memes', meme)
+}
+
+export async function editMeme(id, meme){
+    return api.put(`/data/memes/${id}`, meme)
+}
+
+export async function getMemeData(id){
+    return api.get(`/data/memes/${id}`)
+}
